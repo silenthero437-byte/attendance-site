@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [ {
+        "type": "vscode-edge-devtools.debug",
+        "request": "launch",
+        "name": "Launch Microsoft Edge and open the Edge DevTools",
+        "url": "http://localhost:192.168.32.1",
+        "webRoot": "${workspaceFolder}"
+    },
+
+
+        {
+            "name": "Attach to P${extensionInstallFolder:publisher.extension}",    
+            "port": 9222,
+            "request": "attach",
+            "type": "msedge",
+            "webRoot": "${workspaceFolder}"
+        },
+    {
+        "type": "vscode-edge-devtools.debug",
+        "request": "launch",
+        "name": "Launch Microsoft Edge and open the Edge DevTools",
+        "url": "http://localhost:8080",
+        "webRoot": "${workspaceFolder}"
+    },
+        {
+            "runtimeExecutable": "stable",
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open EduTrack attendance site",
+            "url": "http://localhost:8000/",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
